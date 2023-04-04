@@ -12,7 +12,7 @@ pub fn run() {
     };
 
     let channel: String = match env::var("channel") {
-        Err(_) => "robo-lawyer".to_string(),
+        Err(_) => "test-flow".to_string(),
         Ok(name) => name,
     };
     let openai_key_name: String = match env::var("openai_key_name") {
